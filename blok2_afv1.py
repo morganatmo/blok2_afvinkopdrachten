@@ -36,6 +36,7 @@ def main():
 def lees_inhoud(bestands_naam):
     """Een functie die het volledige bestand inleest en deze scheid op headers en sequenties.
     Het resultaat zijn twee lijsten.
+    input: alpaca_test.fa
     output: twee lijsten= headers en sequenties
     """
     try:
@@ -65,6 +66,7 @@ def lees_inhoud(bestands_naam):
 def is_dna(seq):
     """Een functie die controleert of alle nucleotiden werkelijk in DNA voorkomen.
     Deze functie retourneert een boolean die indiceert of alle letters bestaan uit ATGC.
+    input: seqs (van vorige defintie.)
     output: of het dna is of niet (true of false)
     """
     try:
