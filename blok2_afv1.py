@@ -7,7 +7,10 @@
 
 
 def main():
-    """Deze functie roept alle andere functies aan."""
+    """Deze functie roept alle andere functies aan.
+    input: alpaca_test.fa
+    output: roept de rest van de functies aan.
+    """
     try:
         bestand = "alpaca_test.fa"
         headers, seqs = lees_inhoud(bestand)
@@ -32,7 +35,9 @@ def main():
 
 def lees_inhoud(bestands_naam):
     """Een functie die het volledige bestand inleest en deze scheid op headers en sequenties.
-    Het resultaat zijn twee lijsten."""
+    Het resultaat zijn twee lijsten.
+    output: twee lijsten= headers en sequenties
+    """
     try:
         bestand = open(bestands_naam)
         headers = []
@@ -59,7 +64,9 @@ def lees_inhoud(bestands_naam):
 
 def is_dna(seq):
     """Een functie die controleert of alle nucleotiden werkelijk in DNA voorkomen.
-    Deze functie retourneert een boolean die indiceert of alle letters bestaan uit ATGC."""
+    Deze functie retourneert een boolean die indiceert of alle letters bestaan uit ATGC.
+    output: of het dna is of niet (true of false)
+    """
     try:
         dna = False
         a = seq.count("A")
@@ -77,7 +84,10 @@ def is_dna(seq):
 def knipt(alpaca_seq):
     """Een functie die een restrictie enzym accepteert en een sequentie.
     Controleert of dit restrictie-enzym de sequentie knipt en geeft relevante output.
-    Je mag hier zelf kiezen voor prints, of juist een return."""
+    Je mag hier zelf kiezen voor prints, of juist een return.
+    input: enzymen.txt
+    output: welke enzym knipt in de sequenties
+    """
     try:
         bestand = open("enzymen.txt")
         for line in bestand:
